@@ -4,72 +4,20 @@ const { ccclass, property } = _decorator;
 @ccclass('Game6Model')
 export class Game6Model extends Component {
     @property({type:Prefab})
-    private circleBLue: Prefab
-
-    @property({type:Prefab})
-    private circleRed: Prefab
-
-    @property({type:Prefab})
-    private circleYellow: Prefab
-
-    @property({type:Prefab})
-    private circleGreen: Prefab
-
-    @property({type:Prefab})
-    private circleOrange: Prefab
-
-    @property({type:Prefab})
-    private circleSoftBlue: Prefab
+    private circle: Prefab
 
     @property({type:Prefab})
     private lineDraw: Prefab
+    
+    @property ({type: Prefab})
+    private squared: Prefab
 
-    public get CircleBLue() : Prefab {
-        return this.circleBLue;
+    public get Circle() : Prefab {
+        return this.circle;
     }
     
-    public set CircleBLue(circleBLue : Prefab) {
-        this.circleBLue = circleBLue;
-    }
-
-    public get CircleRed() : Prefab {
-        return this.circleRed;
-    }
-    
-    public set CircleRed(circleRed : Prefab) {
-        this.circleRed = circleRed;
-    }
-
-    public get CircleYellow() : Prefab {
-        return this.circleYellow;
-    }
-    
-    public set CircleYellow(circleYellow : Prefab) {
-        this.circleYellow = circleYellow;
-    }
-
-    public get CircleGreen() : Prefab {
-        return this.circleGreen;
-    }
-    
-    public set CircleGreen(circleGreen : Prefab) {
-        this.circleGreen = circleGreen;
-    }
-
-    public get CircleOrange() : Prefab {
-        return this.circleOrange;
-    }
-    
-    public set CircleOrange(circleOrange : Prefab) {
-        this.circleOrange = circleOrange;
-    }
-
-    public get CircleSoftBlue() : Prefab {
-        return this.circleSoftBlue;
-    }
-    
-    public set CircleSoftBlue(circleSoftBlue : Prefab) {
-        this.circleSoftBlue = circleSoftBlue;
+    public set Circle(circle : Prefab) {
+        this.circle = circle;
     }
 
     public get LineDraw() : Prefab {
@@ -80,6 +28,13 @@ export class Game6Model extends Component {
         this.lineDraw = lineDraw;
     }
     
+    public get Squared() : Prefab {
+        return this.squared;
+    }
+    
+    public set Squared(squared : Prefab) {
+        this.squared = squared;
+    }
     start() {
 
     }
